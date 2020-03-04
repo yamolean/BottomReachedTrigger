@@ -1,0 +1,6 @@
+framework module Pods_ExRx {
+  umbrella header "Pods-ExRx-umbrella.h"
+
+  export *
+  module * { export * }
+}

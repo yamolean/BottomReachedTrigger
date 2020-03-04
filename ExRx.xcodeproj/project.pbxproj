@@ -14,9 +14,11 @@
 		186085D22410452900652C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186085D12410452900652C4D /* Assets.xcassets */; };
 		186085D52410452900652C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186085D32410452900652C4D /* LaunchScreen.storyboard */; };
 		186085DD2410453A00652C4D /* BottomReachedTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186085DC2410453A00652C4D /* BottomReachedTrigger.swift */; };
+		EBBFC01768AA1FE25F8B8512 /* Pods_ExRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973F66254AD5634983622630 /* Pods_ExRx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1A2818453527446257F3C0 /* Pods-ExRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExRx.debug.xcconfig"; path = "Target Support Files/Pods-ExRx/Pods-ExRx.debug.xcconfig"; sourceTree = "<group>"; };
 		186085C52410452500652C4D /* ExRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186085C82410452500652C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186085CA2410452500652C4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		186085D42410452900652C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186085D62410452900652C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186085DC2410453A00652C4D /* BottomReachedTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomReachedTrigger.swift; sourceTree = "<group>"; };
+		5DEFBBE3233F4F70E368B5F6 /* Pods-ExRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExRx.release.xcconfig"; path = "Target Support Files/Pods-ExRx/Pods-ExRx.release.xcconfig"; sourceTree = "<group>"; };
+		973F66254AD5634983622630 /* Pods_ExRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBFC01768AA1FE25F8B8512 /* Pods_ExRx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				186085C72410452500652C4D /* ExRx */,
 				186085C62410452500652C4D /* Products */,
+				94261EEB2BBABCF5E26B4AA9 /* Pods */,
+				D305E13AB6BF1C9CCB0C030C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = ExRx;
 			sourceTree = "<group>";
 		};
+		94261EEB2BBABCF5E26B4AA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B1A2818453527446257F3C0 /* Pods-ExRx.debug.xcconfig */,
+				5DEFBBE3233F4F70E368B5F6 /* Pods-ExRx.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D305E13AB6BF1C9CCB0C030C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				973F66254AD5634983622630 /* Pods_ExRx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186085D92410452900652C4D /* Build configuration list for PBXNativeTarget "ExRx" */;
 			buildPhases = (
+				E47AA46A4CD143C94488E17F /* [CP] Check Pods Manifest.lock */,
 				186085C12410452500652C4D /* Sources */,
 				186085C22410452500652C4D /* Frameworks */,
 				186085C32410452500652C4D /* Resources */,
+				DB5659608AB356A391C532FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB5659608AB356A391C532FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExRx/Pods-ExRx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExRx/Pods-ExRx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExRx/Pods-ExRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47AA46A4CD143C94488E17F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		186085C12410452500652C4D /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		186085DA2410452900652C4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1A2818453527446257F3C0 /* Pods-ExRx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		186085DB2410452900652C4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEFBBE3233F4F70E368B5F6 /* Pods-ExRx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
